@@ -1,23 +1,36 @@
 {
-  "name": "wxstore",
+  "name": "changeStore",
   "version": "1.0.0",
   "description": "A WeChat status management built using event bus and data hijacking",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "npx rollup -c"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/change-beige/wxStore.git"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": [
+    "wx",
+    "微信小程序",
+    "store"
+  ],
+  "author": "change",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/change-beige/wxStore/issues"
   },
   "homepage": "https://github.com/change-beige/wxStore#readme",
   "devDependencies": {
+    "@babel/core": "^7.22.19",
+    "@babel/preset-env": "^7.22.15",
+    "@rollup/plugin-babel": "^6.0.3",
+    "@rollup/plugin-terser": "^0.4.3",
     "rollup": "^3.29.1"
+  },
+  "dependencies": {
+    "@rollup/plugin-commonjs": "^25.0.4",
+    "@rollup/plugin-node-resolve": "^15.2.1"
   }
 }
